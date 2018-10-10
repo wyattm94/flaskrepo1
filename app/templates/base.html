@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <!-- Allow per-page css file loading here -->
+        {% block head %} {% endblock %}
+        <h1> Wyatt Marciniak - FE595 - Flask Financial Application v0.2.0 </h1>
+    </head>
+    <body>
+        <!-- Navigation bar to major functionality pages -->
+        <div class='navbar'>
+            <a href="{{url_for('home')}}"> Home </a>
+            <a href="{{url_for('page2')}}"> Page2 </a>
+            <a href="{{url_for('page3')}}"> Page3 </a>
+        </div>
+        <hr>
+        <!-- Individual Page content loads here -->
+        {% block content %} {% endblock %}
+    </body>
+</html>
