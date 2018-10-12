@@ -1,13 +1,28 @@
 {% extends 'base.html' %}
 
-{% block head %} {% endblock %}
+{% block head %} 
+<title> Home Page </title>
+<link rel='stylesheet' type='text/css' href="{{url_for('static',filename='styles/home.css')}}">
+{% endblock %}
 
 {% block content %}
-    <h1> Welcome to my Financial Application </h1>
-    <h2> Navigate with the navbar (above) for now </h2>
-    <hr>
-    <!--
-    <form action='' method='post' novalidate> 
-    </form>
-    -->
+<div class='row'>
+    <div class='column'>
+        <h1> Welcome to my Financial Application </h1>
+        <h2> Navigate with the navbar (above) for now </h2>
+    </div>
+    <div class='column'>
+        <h1> SP500 </h1>
+        <img src= data:image/png;base64,{{fsp}} alt='Year to date SP500' height=300 width=500><br>
+        <h1> DJIA </h1>
+        <img src= data:image/png;base64,{{fdj}} alt='Year to date SP500' height=300 width=500><br>
+        <h1> NASDAQ </h1>
+        <img src= data:image/png;base64,{{fnd}} alt='Year to date SP500' height=300 width=500><br>
+    </div>
+</div>
+
+<!--
+<form action='' method='post' novalidate> 
+</form>
+-->
 {% endblock %}

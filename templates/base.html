@@ -1,10 +1,14 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <link rel='stylesheet' type='text/css' href="{{url_for('static',filename='styles/base.css')}}">
         <!-- Allow per-page css file loading here -->
         {% block head %} {% endblock %}
-        <h1> Wyatt Marciniak - FE595 - Flask Financial Application v0.2.0 </h1>
     </head>
     <body>
+        <div class='header'>
+            <h1> Wyatt Marciniak - FE595 - Flask Financial Application v0.2.0 </h1>
+        </div>
         <!-- Navigation bar to major functionality pages -->
         <div class='navbar'>
             <a href="{{url_for('home')}}"> Home </a>

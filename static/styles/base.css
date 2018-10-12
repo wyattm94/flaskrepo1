@@ -1,0 +1,22 @@
+.header{
+    background-color: #dfffff;
+    text-align: center;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: #dfffff;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.navbar a:hover{
+    background-color: aqua;
+    font-style: italic;
+}
